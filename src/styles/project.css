@@ -41,32 +41,6 @@
     color: var(--secondary-color);
   } 
 
-  .sisy {
-    color: var(--primary-color);
-  }
-
-  nav {
-    background: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    box-shadow: 2px 3px 2px #f1f1f1;
-    position: sticky;
-      top: 0;
-      left: 0;
-      z-index: 1;
-  }
-
-  .hamburger {
-    display: none;
-  }
-
-  .logo {
-    font-size: 2rem;
-    font-weight: 500;
-  }
-
   ul {
     display: flex;
     justify-content: safe;
@@ -87,38 +61,35 @@
     align-items: center;
     justify-content: space-between;
     gap: 1.9rem;
-    max-width: 1100px;
-    min-height: 500px;
-    margin: 2rem auto -6rem;
+ 
   } 
   
   .intro-text h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    text-align: center;
   }
-  
-  .intro-text h3 {
-    margin-bottom: 0.5rem;
-  }
-  
-  .gender p {
+ 
+  .gender {
     line-height: var(--line-height);
+    text-align: center;
   }
-  
+
+
   .towards {
     color: var(--secondary-color);
   }
   
   .society {
-    color: var(--primary-color);
+    color: var(--secondary-color)
   }
 
   .btn {
     margin-top: 1rem;
-    display: inline-block;
+    display: inline-flex;
     padding: 0.8rem 0.6rem;
     border: none;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     border-radius: 5px;
     color: #fff;
   }
@@ -141,14 +112,6 @@
     background-color:green;
     color: #fff;
   }
-
-  iframe {
-    max-width: 30rem;
-    border-top: 40px groove var(--primary-color);
-    border-bottom: 40px groove var(--primary-color);
-    border-right: 28px solid var(--secondary-color);
-    border-left: 28px solid var(--secondary-color);
-  }
   
   .about {
     position: relative;
@@ -164,19 +127,37 @@
     color: #f1f1f1;
   }
 
-  .about h3 {
-    font-size: 3em;
-    margin-bottom: -20px;
+  .about {
+    font-size: 24x;
+    margin-bottom: -10px;
   }
+
   
   .about p {
-    font-size: 1.5em;
+    font-size: 24px;
   }
-  
-  
+
+
+ @media (max-width: 768px) {
+  .about {
+    font-size: 17px;
+  }
   .about p {
-    font-size: 1.8rem;
-}
+    font-size: 15px;
+  }
+
+  .people ul {
+    font-size: 13px;
+  }
+  .people h2 {
+    font-size: 17px;
+  }
+  .sheroes h2 {
+    font-size: 15px;
+    color: white;
+    background-color: black;
+  }
+ }
   
 .sheroes-gallery {
     display: grid;
@@ -298,6 +279,14 @@ body.dark .role {
   color: var(--secondary-color);
 }
 
+body.dark .target-section {
+  color: white;
+}
+
+body.dark .targets {
+  color: white;
+}
+
 body.dark footer {
   color: #fff;
   border-top: 1px solid #111010;
@@ -306,22 +295,20 @@ body.dark footer {
 
 .facts {
   display: inline;
+  font-family: Arial, Helvetica, sans-serif;
   
 }
 
 .targets {
   text-align: center;
-  color: #ea2027;
-}
-
-.image-sdg {
-  max-width: 1400px;
-  max-height: 700px;
+  color: black;
 }
 
 .about-sheroes {
   text-align: center;
-  color: #ea2027;
+  background-color: #000000;
+  color: white;
+  font-size: 24px;
 }
 
 .story-button {

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <!-- Web page CSS-->
     <link rel="stylesheet" href="src/styles/project.css">
 
@@ -30,35 +31,37 @@
       href="assets/icons/favicon-16x16.png"
     />
 
-    <title>The Sisy Simi Foundation Landing Page</title>
+    <title>The SheCan Foundation Landing Page</title>
 </head>
 <body>
-    <nav>
-          <h1>
-            <span class="sisy">The Sisy Simi Foundation</span>
-          </h1>
-        <div class="theme-switch">
-          <input type="checkbox" class="checkbox" id="checkbox" />
-          <label for="checkbox" class="label">
-             <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
-             <ion-icon name="moon-outline" class="moon"></ion-icon>
-             <div class="switcher"></div>
-          </label>
+
+    <nav class="navbar navbar-expand-lg sticky-top bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">The SheCan Foundation</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#about">About</a>
+            <a class="nav-link" href="#sdg5">SDG 5</a>
+            <a class="nav-link" href="#sheroes">Sheroes</a>
+            <a class="nav-link" href="#case">Report</a>
+            
+            <div class="theme-switch">
+              <input type="checkbox" class="checkbox" id="checkbox" />
+              <label for="checkbox" class="label">
+                 <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
+                 <ion-icon name="moon-outline" class="moon"></ion-icon>
+                 <div class="switcher"></div>
+              </label>
+            </div>
+            
+          </div>
         </div>
-        <ul>
-          <li class="nav-item"><a href="#about" class="nav-link" id="nav-link">About</a></li>
-          <li class="nav-item"><a href="#sdg5" class="nav-link" id="more-info">SDG 5</a></li>
-          <li class="nav-item"><a href="#sheroes" class="nav-link" id="your-voice">Sheroes</a></li>
-          <li class="nav-item"><a href="#report" class="nav-link" id="nav-link">Report</a></li>
-     </ul>
+      </div>
     </nav>
-
-   <div class="hamburger" id="hamburger">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-   </div>
-
+  
    <section class="gender">
     <div class="intro-text">
       <h1>
@@ -66,61 +69,48 @@
         <span class="society"> Society</span>
       </h1>
       <p>
-        "Gender equality is the goal that will help abolish poverty that will create more equal economies, fairer societies, and happier men, women, and children."</p> </ br>
-         The Sisy Simi Foundation is geared towards supporting the girl-child, advocating women's rights and building sustainable systems to combat inequality and all forms of gender-based violence.
+        "Gender equality is the goal that will help abolish poverty that will create more equal economies, fairer societies, and happier men, women, and children."</p>
+        <p>The SheCan Foundation is geared towards supporting the girl-child, advocating women's rights and building sustainable systems to combat inequality and all forms of gender-based violence.
       </p>
-      <a class="btn red" href="#more-info">SDG 5</a>
+      <p intro-btn><a class="btn red" href="#more-info">SDG 5</a>
       <a class="btn green" href="#your-voice">Lend Your Voice</a>
+      </p>
     </div>
-    <div class="i-frame">
-      <iframe
-        width="560"
-        height="315"
-        src="assets/videos/y2mate.com - What does gender equality mean to you_480p.mp4"
-        title="YouTube video player"
-        frameborder="10"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      ></iframe>
-    </div>
+    <br>
+    <br>
   </section>
 
+  <br>
   <section class="about" id="about">
     <h3>Gender Equality- My Responsibility, Your Resonsibility!</h3>
     <p>
       The primary objective of the foundation is to 
-      enlighten, advocate, help, reform and seek justice"
-     Promoting SDG 5 and all it's targets because "no country can every truly flourish if it stifles 
+      enlighten, advocate, help, reform and seek justice".
+      <br>
+      Promoting SDG 5 and all it's targets because "no country can every truly flourish if it stifles 
       the potential of its women and deprives itself of the contribution of half its citizens.”
     </p>
 </section>
 
 <section class="people" id="sdg5">
 
-  <img class="image-sdg" src="https://www.isglobal.org/documents/10179/6939455/SDG+5+grande+en/5129b254-6997-4a95-a6ed-3771967bcce9?t=1539683011000" alt="" id="yui_patched_v3_11_0_1_1646098946008_454">
-
-  <h2 class="targets">Sustainable Development Goal 5: Targets
-</br>
- Goal 5: Achieve gender equality and empower all women and girls</h2> 
- <ul class="facts">    <li><strong>&#8226  End all forms of discrimination against all women and girls everywhere.</strong></li>   
-   <li><strong>&#8226  Eliminate all forms of violence against all women and girls in the public and private spheres, including trafficking and sexual and other types of exploitation.</strong></li></ul>
-  <div class="more-text"><ul class="facts">    
-  <li><strong>&#8226  Eliminate all harmful practices, such as child, early and forced marriage and female genital mutilation.</strong></li>
-  <li><strong>&#8226  Recognize and value unpaid care and domestic work through the provision of public services, infrastructure and social protection policies&nbsp;and the promotion of shared responsibility within the household and the family as nationally appropriate.</strong></li>   
-  <li><strong>&#8226  Ensure women’s full and effective participation and equal opportunities for leadership at all levels of decisionmaking in political, economic and public life.</strong></li>   
-  <li><strong>&#8226  Ensure universal access to sexual and reproductive health and reproductive rights as agreed in accordance with the Programme of Action of the International Conference on Population and Development and the Beijing Platform for Action and the outcome documents of their review conferences.</strong></li>   
-  <li><strong>&#8226  Undertake reforms to give women equal rights to economic resources, as well as access to ownership and control over land and other forms of property, financial services, inheritance and natural resources, in accordance with national laws.</strong></li>   
-  <li><strong>&#8226  Enhance the use of enabling technology, in particular information and communications technology, to promote the empowerment of women.</strong></li>   
-  <li><strong>&#8226  Adopt and strengthen sound policies and enforceable legislation for the promotion of gender equality and the empowerment of all women and girls at all levels.</strong></li></ul></div>
+  <img class="image-sdg img-fluid" src="https://www.isglobal.org/documents/10179/6939455/SDG+5+grande+en/5129b254-6997-4a95-a6ed-3771967bcce9?t=1539683011000" alt="" id="yui_patched_v3_11_0_1_1646098946008_454">
+<br>
+  <h2 class="targets">Sustainable Development Goal 5: Targets</h2>
+  <div class="target-section">
+  <li> End all forms of discrimination against all women and girls everywhere.</li>   
+  <li> Eliminate all forms of violence against all women and girls in the public and private spheres, including trafficking and sexual and other types of exploitation.</strong></li></ul>
+  <li>  Eliminate all harmful practices, such as child, early and forced marriage and female genital mutilation</li>
+  <li>  Recognize and value unpaid care and domestic work through the provision of public services, infrastructure and social protection policies&nbsp;and the promotion of shared responsibility within the household and the family as nationally appropriate.</strong></li>   
+  <li> Ensure women’s full and effective participation and equal opportunities for leadership at all levels of decisionmaking in political, economic and public life.</strong></li>   
+  <li>  Ensure universal access to sexual and reproductive health and reproductive rights as agreed in accordance with the Programme of Action of the International Conference on Population and Development and the Beijing Platform for Action and the outcome documents of their review conferences.</strong></li>   
+  <li>  Undertake reforms to give women equal rights to economic resources, as well as access to ownership and control over land and other forms of property, financial services, inheritance and natural resources, in accordance with national laws.</strong></li>   
+  <li>  Enhance the use of enabling technology, in particular information and communications technology, to promote the empowerment of women.</strong></li>   
+  <li>  Adopt and strengthen sound policies and enforceable legislation for the promotion of gender equality and the empowerment of all women and girls at all levels.</li></ul></div>
 </section>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
+<br>
+<br>
+<br>
 
 <section class="sheroes" id="sheroes">
 <h2 class="about-sheroes">
@@ -131,6 +121,7 @@
   <div class="sheroes-gallery">
     <a href="assets/images/Sekonnou Gloria AGUEH.jpg" class="big">
       <img
+        class="img-fluid"
         src="assets/images/Sekonnou Gloria AGUEH.jpg"
         alt="Sekonnou Gloria"
         title="Sekonnou Gloria"
@@ -139,6 +130,7 @@
 
     <a href="assets/images/Melanie Sonhaye Kombate.jpg" class="big"
     ><img
+      class="img-fluid"
       src="assets/images/Melanie Sonhaye Kombate.jpg"
       alt="Melanie Sonhaye"
       title="Melanie Sonhaye"
@@ -147,6 +139,7 @@
 
     <a href="assets/images/Rainatou Sow.jpg" class="big">
       <img
+       class="img-fluid"
         src="assets/images/Rainatou Sow.jpg"
         alt="Rainatou Sow"
         title="Rainatou Sow"
@@ -156,6 +149,7 @@
 
     <a href="assets/images/Funmilayo Ransome-Kuti.jpg" class="big">
       <img
+      class="img-fluid"
         src="assets/images/Funmilayo Ransome-Kuti.jpg"
         alt="Funmilayo Ransome-Kuti"
         title="Funmilayo Ransome-Kuti"
@@ -164,6 +158,7 @@
 
     <a href="assets/images/Hannah Forster.jpg" class="big">
       <img
+      class="img-fluid"
         src="assets/images/Hannah Forster.jpg"
         alt="Hannah Forster"
         title="Hannah Forster"
@@ -172,6 +167,7 @@
 
     <a href="assets/images/Mariam Lamizana.jpg" class="big">
       <img
+      class="img-fluid"
         src="assets/images/Mariam Lamizana.jpg"
         alt="Mariam Lamizana"
         title="Mariam Lamizana"
@@ -180,14 +176,9 @@
   </div>
 </section>
 
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-
+<br>
+<br>
+<br>
 <section class="report" id="case">
 <h2 class="report-intro">
 DO YOU HAVE A STORY TO TELL?
@@ -219,15 +210,13 @@ Let us know. Share your story. Report a case of inequality, let's seek justice a
 
 
 
-
-
-<footer> &copy;2022 The Sisy Simi Foundation. All Rights Reserved.
+<footer> &copy;2022 The SheCan Foundation. All Rights Reserved.
 <div>Landing Page Coded By Sisy Simi</div>
 </footer>
 
 <i class="scroll-up" id="scroll-up"
      ><img
-       src="icons/external-upward-arrow-arrow-flatart-icons-lineal-color-flatarticons.png"
+       src="/assets/icons/external-upward-arrow-arrow-flatart-icons-lineal-color-flatarticons.png"
        class="socicon up-arrow"
        alt="up-arrow"
 /></i>
